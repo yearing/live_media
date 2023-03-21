@@ -1,7 +1,7 @@
 target("live_media")
     set_kind("binary")
     --add_files("src/main.cpp","src/config/config.cpp")
-    add_files("src/*.cpp","src/config/*.cpp")
+    add_files("src/*.cpp","src/config/*.cpp","src/sip/*.cpp")
     add_includedirs("3rdparts/libhv-lib/x64/include","3rdparts/exosip-lib/x64/include")
     add_defines("WIN32","_WINDOWS","HV_STATICLIB","NDEBUG","WIN32_LEAN_AND_MEAN","_CRT_SECURE_NO_WARNINGS","_WIN32_WINNT=0x0600")
     add_links("hv_static","eXosip")

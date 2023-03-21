@@ -19,6 +19,7 @@ const static std::string kSystemWorkerThreads = SYSTEM_FIELD"worker_threads";
 #define GB28181_FIELD "gb28181."
 const static std::string kGB28181ExosipLog = GB28181_FIELD"exosip_log_enable";
 const static std::string kGB28181ServerId = GB28181_FIELD"server_id";
+const static std::string kGB28181ServerDomain = GB28181_FIELD"server_domain";
 const static std::string kGB28181ServerUsr = GB28181_FIELD"server_usr";
 const static std::string kGB28181ServerPwd = GB28181_FIELD"server_passwd";
 const static std::string kGB28181ServerIp = GB28181_FIELD"server_ip";

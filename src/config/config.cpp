@@ -20,9 +20,10 @@ Config::Config() {
 
     _configs[kGB28181ExosipLog] = "1";
     _configs[kGB28181ServerId] = "";
+    _configs[kGB28181ServerDomain] = "";
     _configs[kGB28181ServerUsr] = "admin";
     _configs[kGB28181ServerPwd] = "123456";
-    _configs[kGB28181ServerIp] = "127.0.0.1"
+    _configs[kGB28181ServerIp] = "127.0.0.1";
     _configs[kGB28181RemoteAuto] = "1";
     _configs[kGB28181RemoteId] = "";
     _configs[kGB28181RemoteIp] = "127.0.0.1";

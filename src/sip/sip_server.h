@@ -5,7 +5,8 @@
 #ifndef LIVE_MEDIA_SIP_SERVER_H
 #define LIVE_MEDIA_SIP_SERVER_H
 
-#incude <iostream>
+#include <iostream>
+#include <thread>
 
 #include <osipparser2/osip_message.h>
 #include <osipparser2/osip_parser.h>
@@ -17,6 +18,7 @@
 #include <eXosip2/eX_options.h>
 #include <eXosip2/eX_message.h>
 
+#define TEST(A) #A
 class SipServer{
 public:
     SipServer();
@@ -24,7 +26,6 @@ public:
 
 private:
     void init();
-    std::thread _sip_thread;
     std::atomic<bool> _exit_thread_flag = false;
 };
 #endif //LIVE_MEDIA_SIP_SERVER_H

@@ -4,6 +4,12 @@
 
 #include "sip_server.h"
 
-void SipServer::init() {
+SipServer::SipServer() {
+    init();
+}
+SipServer::~ SipServer() {
 
+}
+void SipServer::init() {
+    std::cout << "test:" << TEST(EXOSIP_REGISTRATION_SUCCESS) << std::endl;
 }
